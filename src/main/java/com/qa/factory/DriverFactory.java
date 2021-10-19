@@ -33,7 +33,8 @@ public class DriverFactory {
 		//sauceOpts.setCapability("username", "oauth-girispeaks-3dc2c");
 		//sauceOpts.setCapability("accessKey", "5f64ebbb-9c01-4c84-9206-bed535fb38cc");
 		
-		DesiredCapabilities cap = new DesiredCapabilities();
+		//Code to run on SauceLabs
+		/* DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("build", "Java-W3C-Examples");
 		cap.setCapability("seleniumVersion", "4.0.0-alpha-7");
 		cap.setCapability("browserVersion", "latest");
@@ -56,10 +57,10 @@ public class DriverFactory {
 			e.printStackTrace();
 		}
 		
-		tlWebDriver.set(driver);
+		tlWebDriver.set(driver); */
 		
 		//Code to run in local
-		/*if(browser.equals("chrome")) {
+		if(browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			tlWebDriver.set(new ChromeDriver());
 		} else
@@ -71,7 +72,7 @@ public class DriverFactory {
 					WebDriverManager.iedriver().setup();
 					tlWebDriver.set(new InternetExplorerDriver());
 				} else
-					System.out.println("Please pass correct browser");*/
+					System.out.println("Please pass correct browser");
 		
 		getDriver().manage().deleteAllCookies();
 		getDriver().manage().window().maximize();
