@@ -1,0 +1,5 @@
+parallel/TestNgRunner.class
+parallel/LoginPageSteps.class
+parallel/MyAccountsPageSteps.class
+parallel/ApplicationHooks.class
+testRunners/MyTestRunner.class
